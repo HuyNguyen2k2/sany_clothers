@@ -67,6 +67,12 @@
     display: inline-block;
 }
 
+.body__product-left-see-more:hover {
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.194);
+}
+
 .body__product-left-see-more .background {
     position: absolute;
     top: 50%;
@@ -285,7 +291,21 @@
     transition: .4s;
 }
 
-.body__product-list .body__product-item .select-add-cart .active{
+.select-add-cart .btn-confirm {
+    color: #fff;
+    background: #000;
+    padding-block: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.select-add-cart .btn-confirm:hover {
+    opacity: .6;
+}
+
+.body__product-list .body__product-item .select-add-cart.active{
     bottom:0;
 }
 

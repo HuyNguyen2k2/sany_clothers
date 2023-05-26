@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/showCart.css">
     <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -182,7 +183,214 @@
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
-    
+        </div>
+
+        <div class="body-cart">
+            <div class="space-block"></div>
+            <div class="main-body-cart">
+                <div class="headline-cart">
+                    <div class="title">
+                        <span class="cart-title">giỏ hàng</span>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                    <div class="total-price">
+                        <div class="total">Tổng tiền: </div>
+                        <p>300,000</p>
+                        <span>VND</span>
+                    </div>
+                </div>
+                <div class="list-product-cart">
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/imgs/cartProduct/sp-1-1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-right">
+                            <div class="top">
+                                <div class="name-product">sản phẩm 1</div>
+                                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+                            </div>
+                            <div class="center">
+                                <p>Size: </p>
+                                <span>XL</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="add-cart form-quantity">
+                                    <div class="quantity">
+                                        <div class="input">
+                                            <div class="pre quantity-item">-</div>
+                                            <input class="number quantity-item" type="text" value="1" min="1">
+                                            <div class="next quantity-item">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500,000</p>
+                                    <span>VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="check-confirm" type="checkbox">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/imgs/cartProduct/sp-1-1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-right">
+                            <div class="top">
+                                <div class="name-product">sản phẩm 1</div>
+                                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+                            </div>
+                            <div class="center">
+                                <p>Size: </p>
+                                <span>XL</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="add-cart form-quantity">
+                                    <div class="quantity">
+                                        <div class="input">
+                                            <div class="pre quantity-item">-</div>
+                                            <input class="number quantity-item" type="text" value="1" min="1">
+                                            <div class="next quantity-item">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500,000</p>
+                                    <span>VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="check-confirm" type="checkbox">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/imgs/cartProduct/sp-1-1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-right">
+                            <div class="top">
+                                <div class="name-product">sản phẩm 1</div>
+                                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+                            </div>
+                            <div class="center">
+                                <p>Size: </p>
+                                <span>XL</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="add-cart form-quantity">
+                                    <div class="quantity">
+                                        <div class="input">
+                                            <div class="pre quantity-item">-</div>
+                                            <input class="number quantity-item" type="text" value="1" min="1">
+                                            <div class="next quantity-item">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500,000</p>
+                                    <span>VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="check-confirm" type="checkbox">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/imgs/cartProduct/sp-1-1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-right">
+                            <div class="top">
+                                <div class="name-product">sản phẩm 1</div>
+                                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+                            </div>
+                            <div class="center">
+                                <p>Size: </p>
+                                <span>XL</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="add-cart form-quantity">
+                                    <div class="quantity">
+                                        <div class="input">
+                                            <div class="pre quantity-item">-</div>
+                                            <input class="number quantity-item" type="text" value="1" min="1">
+                                            <div class="next quantity-item">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500,000</p>
+                                    <span>VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="check-confirm" type="checkbox">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/imgs/cartProduct/sp-1-1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-right">
+                            <div class="top">
+                                <div class="name-product">sản phẩm 1</div>
+                                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+                            </div>
+                            <div class="center">
+                                <p>Size: </p>
+                                <span>XL</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="add-cart form-quantity">
+                                    <div class="quantity">
+                                        <div class="input">
+                                            <div class="pre quantity-item">-</div>
+                                            <input class="number quantity-item" type="text" value="1" min="1">
+                                            <div class="next quantity-item">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500,000</p>
+                                    <span>VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="check-confirm" type="checkbox">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/imgs/cartProduct/sp-1-1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-right">
+                            <div class="top">
+                                <div class="name-product">sản phẩm 1</div>
+                                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+                            </div>
+                            <div class="center">
+                                <p>Size: </p>
+                                <span>XL</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="add-cart form-quantity">
+                                    <div class="quantity">
+                                        <div class="input">
+                                            <div class="pre quantity-item">-</div>
+                                            <input class="number quantity-item" type="text" value="1" min="1">
+                                            <div class="next quantity-item">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500,000</p>
+                                    <span>VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="check-confirm" type="checkbox">
+                    </div>
+                </div>
+                <div class="checkout">
+                    <a href="#">Thanh toán</a>
+                </div>
+            </div>
         </div>
 
     </header>
@@ -1286,5 +1494,7 @@
 </body>
 
     <script src="./assets/js/slide.js"></script>
+    <script src="./assets/js/showaddcart.js"></script>
+    <script src="./assets/js/showCart.js"></script>
 
 </html>
