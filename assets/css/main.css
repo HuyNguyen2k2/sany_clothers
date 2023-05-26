@@ -187,6 +187,7 @@ html {
     background: #ecf0f1;
     overflow: hidden;
     display: none;
+    height: 750px;
 }
 
 .header__slider-item:nth-child(1) {

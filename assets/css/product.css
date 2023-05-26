@@ -67,11 +67,33 @@
     display: inline-block;
 }
 
+.body__product-left-see-more::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    transition: .4s;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.body__product-left-see-more:hover::before {
+    width: 100%;
+}
+
 .body__product-left-see-more:hover {
-    color: white;
+    color: #fff;
+}
+
+.body__product-left-see-more:hover {
     transform: scale(1.05);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.194);
 }
+
+
 
 .body__product-left-see-more .background {
     position: absolute;

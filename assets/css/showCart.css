@@ -163,9 +163,10 @@
 
 .body-cart .main-body-cart .list-product-cart .cart-item .form-quantity .quantity-item {
     font-size: 15px;
-    width: 20px;
+    width: 46px;
     height: 20px;
     border: 1px solid #eee;
+    text-align: center;
 }
 
 .form-quantity .quantity .input .quantity-item {
