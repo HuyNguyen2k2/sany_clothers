@@ -253,14 +253,17 @@
 
 .body__product-list .body__product-item .list-color-product .color-item:nth-child(1) {
     border-color: red;
+    background: red;
 }
 
 .body__product-list .body__product-item .list-color-product .color-item:nth-child(2) {
     border-color: brown;
+    background-color: brown;
 }
 
 .body__product-list .body__product-item .list-color-product .color-item:nth-child(3) {
     border-color: black;
+    background: black;
 }
 
 .body__product-list .action {
