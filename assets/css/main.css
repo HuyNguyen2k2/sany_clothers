@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: .2s;
 }
 
 html {
@@ -62,6 +63,24 @@ html {
     align-items: center;
     padding-inline: 3%;
     text-transform: uppercase;
+}
+
+.header__navbar.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: #eee;
+    animation: stickyHeader .5s linear forwards;
+}
+
+@keyframes stickyHeader {
+    0% {
+        top: -100px;
+    }100%{
+        top: 0;
+    }
 }
 
 .header__navbar-list {

@@ -48,6 +48,7 @@
     display: flex;
     gap: 20px;
     color: #747d8c;
+    margin-right: 20px;
 }
 
 .body__product-left-see-more {
