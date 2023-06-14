@@ -18,3 +18,4 @@ btnHiden.addEventListener('click', function(){
 spaceblock.addEventListener('click', function(){
     bodyShow.classList.remove('active');
 })
+

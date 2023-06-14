@@ -132,6 +132,10 @@ html {
     cursor: pointer;
 }
 
+.header__navbar-item-icon.icon-cart {
+    position: relative;
+}
+
 .header__navbar-subnav {
     position: absolute;
     z-index: 9999;

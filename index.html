@@ -125,7 +125,10 @@
                     <li class="header__navbar-item-icon"><i class="fa-regular fa-user"></i></li>
                 </a>
                 <li class="header__navbar-item-icon"><i class="fa-regular fa-heart"></i></li>
-                <li class="header__navbar-item-icon"><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="header__navbar-item-icon icon-cart">
+                    <div class="quantity-cart"><span>0</span></div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </li>
             </ul>
         </nav>
 
@@ -201,7 +204,7 @@
                 <div class="total-price">
                     <div class="total">
                         <span>Tổng tiền: </span>
-                        <span>0</span>
+                        <span class="total-price-cart-js">0</span>
                         <span>VND</span>
                     </div>
                 </div>
@@ -254,7 +257,7 @@
         <section class="body__product-1">
             <div class="body__product-left">
                 <div class="body__product-left-banner">
-                    <img src="./assets/imgs/bannerBody/banner-6.jpg" alt="">
+                    <img src="./assets/imgs/bannerBody/banner-2.jpg" alt="">
                 </div>
                 <div class="body__product-left-see-more">
                     xem thêm    
@@ -683,7 +686,7 @@
             </div>
             <div class="body__product-2-list">
                 <div class="body__product-2-item">
-                    <img src="./assets/imgs/bannerBody/banner-4.jpg" alt="img">
+                    <img src="./assets/imgs/bannerBody/banner-3.png" alt="img">
                 </div>
             </div>
         </section>
@@ -695,7 +698,7 @@
                 <ul class="body__product-list">
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-1-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-1-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-1-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -749,7 +752,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -757,11 +760,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="0" class="id-product">
+                        <input type="hidden" value="7" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-2-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-2-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-2-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -815,7 +818,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -823,11 +826,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="1" class="id-product">
+                        <input type="hidden" value="8" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-3-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-3-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-3-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -881,7 +884,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -889,11 +892,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="2" class="id-product">
+                        <input type="hidden" value="9" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-4-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-4-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-4-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -947,7 +950,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -955,11 +958,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="3" class="id-product">
+                        <input type="hidden" value="10" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-5-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-5-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-5-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -1013,7 +1016,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -1021,11 +1024,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="4" class="id-product">
+                        <input type="hidden" value="11" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-6-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-6-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-6-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -1079,7 +1082,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -1087,11 +1090,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="5" class="id-product">
+                        <input type="hidden" value="12" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-6-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-6-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-6-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -1145,7 +1148,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -1153,11 +1156,11 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="6" class="id-product">
+                        <input type="hidden" value="13" class="id-product">
                     </li>
                     <li class="body__product-item">
                         <div class="body__product-item-top">
-                                <img class="img img-main" src="./assets/imgs/productBody/sp-6-1.jpg" alt="">
+                                <img class="img img-product-js img-main" src="./assets/imgs/productBody/sp-6-1.jpg" alt="">
                                 <img class="img img-zoom" src="./assets/imgs/productBody/sp-6-2.jpg" alt="">
                             <div class="action">
                                 <div class="list-action">
@@ -1211,7 +1214,7 @@
                         <div class="content-product">
                             <h4 class="name-product">san pham 1</h4>
                             <div class="des-product">
-                                <p class="price-product"><span>300,000</span><span>VND</span></p>
+                                <p class="price-product"><span>300000</span><span>VND</span></p>
                                 <div class="list-color-product">
                                     <div class="color-item"></div>
                                     <div class="color-item"></div>
@@ -1219,7 +1222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" value="7" class="id-product">
+                        <input type="hidden" value="14" class="id-product">
                     </li>
                 </ul>
                 <div class="body__product-3-btn-see-more">
@@ -1307,8 +1310,8 @@
 
     <script src="./assets/js/slide.js"></script>
     <script src="./assets/js/showaddcart.js"></script>
-    <script src="./assets/js/showCart.js"></script>
     <script src="./assets/js/add-cart.js"></script>
+    <script src="./assets/js/showCart.js"></script>
     <script src="./assets/js/header-sticky.js"></script>
 
 </html>
