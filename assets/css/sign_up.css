@@ -18,12 +18,29 @@
     letter-spacing: 3px;
 }
 
-.container_signUp-body_form-signUp {
-
+.body_form-signUp-input {
+    position: relative;
+    margin: 30px 0;
 }
 
-.body_form-signUp-input {
-    margin: 30px 0;
+.body_form-signUp-input .error {
+    position: absolute;
+    color: red;
+    top: 110%;
+    left: 0;
+    font-size: 12px;
+}
+
+.body_form-signUp-input .line {
+    position: absolute;
+    width: 0%;
+    background: red;
+    height: 2px;
+    bottom: 0;
+}
+
+.body_form-signUp-input .line.active {
+    width: 100%;
 }
 
 .body_form-signUp-input input {

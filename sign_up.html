@@ -135,30 +135,43 @@
     <div class="container_signUp banner">
         <div class="container_signUp-body">
             <h2 class="container_signUp-body-title">đăng ký tài khoản</h2>
-            <div class="container_signUp-body_form-signUp">
-                <div class="body_form-signUp-input">
-                    <input type="text" placeholder="Họ Tên">
-                </div>
-                <div class="body_form-signUp-input">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="body_form-signUp-input">
-                    <input type="tel" placeholder="Số điện thoại">
-                </div>
-                <div class="body_form-signUp-input">
-                    <input type="password" placeholder="Mật khẩu">
-                </div>
-                <div class="body_form-signUp-input">
-                    <input type="password" placeholder="Nhập lại mật khẩu">
-                </div>
-                <div class="body_form-signUp-remember">
-                    <input type="checkbox">
-                    <span>Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie</span>
-                </div>
-                <div class="body_form-signUp-confirm">
-                    <input type="submit" value="Đăng ký">
-                </div>
-            </div>
+            <form action="#" onsubmit="return false">
+                <div class="container_signUp-body_form-signUp">
+                    <div class="body_form-signUp-input">
+                        <input type="text" name="username" placeholder="Họ Tên">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_form-signUp-input">
+                        <input type="mail" name="mail" placeholder="Email">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_form-signUp-input">
+                        <input type="text" name="phone" placeholder="Số điện thoại">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_form-signUp-input">
+                        <input type="password" name="password" placeholder="Mật khẩu">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_form-signUp-input">
+                        <input type="password" name="password" placeholder="Nhập lại mật khẩu">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_form-signUp-remember">
+                        <input type="checkbox">
+                        <span>Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie</span>
+                    </div>
+                    <div class="body_form-signUp-confirm">
+                        <input type="submit" class="confirm-sign-up" name="confirmSignUp" value="Đăng ký">
+                    </div>
+                </div>     
+            </form>
+            
         </div>
     </div>
 
@@ -238,9 +251,10 @@
 </body>
 
     <!-- <script src="./assets/js/slide.js"></script> -->
-    <script src="./assets/js/showaddcart.js"></script>
+    <!-- <script src="./assets/js/showaddcart.js"></script> -->
     <!-- <script src="./assets/js/showCart.js"></script> -->
-    <script src="./assets/js/add-cart.js"></script>
+    <!-- <script src="./assets/js/add-cart.js"></script> -->
+    <script src="./assets/js/sign_up.js"></script>
     <script src="./assets/js/header-sticky.js"></script>
 
 </html>

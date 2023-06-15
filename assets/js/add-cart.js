@@ -99,7 +99,7 @@ function handleAddCart(){
                             <div class="add-cart form-quantity">
                                 <div class="quantity">
                                     <div class="input">
-                                        <p>Số lượng: </p>
+                                        <p>Số lượng:</p>
                                         <input class="number quantity-item" type="number" value="${value.quantity}" min="0">
                                     </div>
                                 </div>

@@ -1,7 +1,7 @@
 /* Body 1 */
 .body__product-1 {
     display: grid;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 3fr 7fr;
     grid-column-gap: 3%;
     margin-top: 100px;
 }
@@ -199,6 +199,7 @@
 
 .body__product-list .body__product-item .des-product {
     display: flex;
+    letter-spacing: 2px;
     justify-content: space-between;
 }
 
@@ -444,6 +445,9 @@
 }
 
 /* Body 3 */
+.body__product-3-container {
+    margin: 0 10px;
+}
 
 .body__product-3-title {
     font-size: 25px;
