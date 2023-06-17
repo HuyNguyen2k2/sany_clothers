@@ -189,6 +189,7 @@
     text-overflow: ellipsis;
     word-break: break-word;
     color: #747d8c;
+    font-size: 13px;
 }
 
 .body__product-list .body__product-item .content-product{

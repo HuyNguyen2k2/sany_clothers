@@ -134,30 +134,32 @@
     <div class="container_login banner">
         <div class="container_login-body">
             <h2 class="container_login-body-title">đăng nhập</h2>
-            <div class="container_login-body-signUp">
-                <span>Bạn chưa có tài khoản?</span>
-                <a href="./sign_up.html">Đăng kí</a>
-            </div>
-            <div class="container_login-body-formLogin">
-                <div class="body_formLogin-input">
-                    <input class="user-name input-email" type="text" placeholder="Email & số điện thoại" name="userName">
-                    <span class="error"></span>
-                    <div class="line"></div>
+            <form class="form-login" action="./index.html" onsubmit="return false">
+                <div class="container_login-body-signUp">
+                    <span>Bạn chưa có tài khoản?</span>
+                    <a href="./sign_up.html">Đăng kí</a>
                 </div>
-                <div class="body_formLogin-input">
-                    <input class="user-name input-password" type="password" placeholder="Mật khẩu" name="password">
-                    <span class="error"></span>
-                    <div class="line"></div>
+                <div class="container_login-body-formLogin">
+                    <div class="body_formLogin-input">
+                        <input class="user-name input-email" type="text" placeholder="Tên đăng nhập" name="userName">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_formLogin-input">
+                        <input class="user-name input-password" type="password" placeholder="Mật khẩu" name="password">
+                        <span class="error"></span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="body_formLogin-remember">
+                        <input type="checkbox">
+                        <span>Ghi nhớ tài khoản</span>
+                    </div>
+                    <div class="body_formLogin-confirm">
+                        <a href="#" class="forget">Quên mật khẩu?</a>
+                        <input type="submit" value="Đăng nhập">
+                    </div>
                 </div>
-                <div class="body_formLogin-remember">
-                    <input type="checkbox" name="" id="">
-                    <span>Ghi nhớ tài khoản</span>
-                </div>
-                <div class="body_formLogin-confirm">
-                    <a href="#" class="forget">Quên mật khẩu?</a>
-                    <input type="submit" value="Đăng nhập" name="" id="">
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -237,9 +239,11 @@
 </body>
 
     <!-- <script src="./assets/js/slide.js"></script> -->
-    <script src="./assets/js/showaddcart.js"></script>
+    <!-- <script src="./assets/js/showaddcart.js"></script> -->
     <!-- <script src="./assets/js/showCart.js"></script> -->
-    <script src="./assets/js/add-cart.js"></script>
+    <!-- <script src="./assets/js/add-cart.js"></script> -->
     <script src="./assets/js/header-sticky.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/validate.js"></script>
 
 </html>

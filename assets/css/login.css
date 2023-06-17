@@ -30,7 +30,28 @@
 }
 
 .body_formLogin-input {
+    position: relative;
     margin: 30px 0;
+}
+
+.body_formLogin-input .error{
+    position: absolute;
+    color: red;
+    top: 110%;
+    left: 0;
+    font-size: 12px;
+}
+
+.body_formLogin-input .line{
+    position: absolute;
+    width: 0%;
+    background: red;
+    height: 2px;
+    bottom: 0;
+}
+
+.body_formLogin-input .line.active {
+    width: 100%;
 }
 
 .body_formLogin-input input {
@@ -67,3 +88,4 @@
 .body_formLogin-confirm input:hover {
     background: #000;
 }
+

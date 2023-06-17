@@ -2,31 +2,17 @@ function validateSignUp(){
 
     const listInput=document.querySelectorAll('.body_form-signUp-input input');
     const btnSignUp=document.querySelector('.confirm-sign-up');
+    const fromSignUp=document.querySelector('.from-sign-up');
 
-    function showError(input, text){
-        const parent=input.parentElement;
-        const error=parent.querySelector('.error');
-        const line=parent.querySelector('.line');
-        error.innerHTML = text;
-        line.classList.add('active');   
-    }
+    // localStorage
+    const data=JSON.parse(localStorage.getItem('sannyAccount'));
+    const listAcc=data ? data : [];
 
-    function showSuccess(input){
-        const parent=input.parentElement;
-        const error=parent.querySelector('.error');
-        const line=parent.querySelector('.line');
-        error.innerHTML = '';
-        line.classList.remove('active');
-    }
-
-    function checkFill(input){
-        if(input.value.trim()==""){
-            showError(input, 'Không được để trống!');
-            return false;
-        }else{
-            showSuccess(input);
-            return true;
-        }
+    const checkSignUp = {
+        name:false,
+        mail:false,
+        phone:false,
+        password:false
     }
 
     function checkLength(input, min, max){
@@ -78,21 +64,55 @@ function validateSignUp(){
         items.addEventListener('focusout', e=>{
             const check=checkFill(items);
             if(index==0 && check){
-                checkLength(items, 6, 20);
+                checkSignUp.name = checkLength(items, 5, 20);
             }
             if(index==1 && check){
-                checkEmail(items);
+                checkSignUp.mail = checkEmail(items);
             }
             if(index==2 && check){
-                checkPhoneNumber(items);
+                checkSignUp.phone = checkPhoneNumber(items);
+            }
+            if(index==3 && check){
+                checkSignUp.password = checkLength(items, 5, 20);
             }
             if(index==4 && check){
-                checkPassword(listInput[3], items);
+                checkSignUp.password = checkPassword(listInput[3], items);
             }
         })
     })
 
+    btnSignUp.addEventListener('click', e=>{
 
+        // Check thong tin rong
+        listInput.forEach(items=>{
+            checkFill(items);
+        })
+        
+        // check điều kiện đúng hết
+        if(checkSignUp.name && checkSignUp.mail && checkSignUp.phone && checkSignUp.password){
+
+            //dang ky thanh cong => push len localstore
+            const account={
+                name:listInput[0].value,
+                mail:listInput[1].value,
+                phone:listInput[2].value,
+                password:listInput[3].value
+            }
+
+            listAcc.push(account);
+            localStorage.setItem('sannyAccount', JSON.stringify(listAcc));
+
+            alert('Bạn đã đăng ký thành công tài khoản Sanny!');
+
+            fromSignUp.onsubmit=function(){
+                return true;
+            }
+            
+        }else{
+            alert('Đăng ký không thành công!');
+        }
+
+    })
 
 }
 
