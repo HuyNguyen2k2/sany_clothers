@@ -3,6 +3,7 @@ function login(){
     const btnLogin=document.querySelector('.body_formLogin-confirm input');
     const listInput=document.querySelectorAll('.body_formLogin-input input');
     const formLogin=document.querySelector('.form-login');
+    const rememberAcc=document.querySelector('.remember-acc');
 
     const data=JSON.parse(localStorage.getItem('sannyAccount'));
     const listAcc=data?data:[];
@@ -10,6 +11,12 @@ function login(){
     const accLogin={
         name:'',
         password:''
+    }
+    
+    const acc_r = JSON.parse(localStorage.getItem('sannyAccount_r'));
+    if(acc_r){
+        listInput[0].value=acc_r.name;
+        listInput[1].value=acc_r.password;
     }
 
     function checkAcc(input){
@@ -61,6 +68,9 @@ function login(){
             }
 
             if(check.name && check.password){
+                if(rememberAcc.checked){
+                    localStorage.setItem('sannyAccount_r', JSON.stringify(accLogin));
+                }
                 alert('Đăng nhập thành công!');
                 formLogin.onsubmit=function(){
                     return true;
