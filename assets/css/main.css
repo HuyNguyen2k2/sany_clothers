@@ -146,6 +146,10 @@ html {
     cursor: pointer;
 }
 
+.header__navbar-item-icon a{
+    color: #666;
+}
+
 .header__navbar-item-icon.icon-cart {
     position: relative;
 }
