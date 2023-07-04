@@ -1,6 +1,6 @@
 function modal() {
 
-    const show = document.querySelectorAll('.body__product-item');
+    const show = document.querySelectorAll('.body__product-item .body__product-item-top img');
     const hidden = document.querySelector('.modal-close');
     const bodyShow = document.querySelector('.modal');
 

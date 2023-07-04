@@ -148,6 +148,7 @@ html {
 
 .header__navbar-item-icon a{
     color: #666;
+    text-decoration: none;
 }
 
 .header__navbar-item-icon.icon-cart {
