@@ -101,6 +101,11 @@ html {
     display: flex;
     list-style-type: none;
 }
+
+.header__navbar-list a {
+    text-decoration: none;
+}
+
 .header__navbar-item {
     padding-right: 70px;
     color: #666;
